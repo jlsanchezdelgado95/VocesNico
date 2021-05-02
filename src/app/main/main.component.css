@@ -1,0 +1,77 @@
+.menuGeneral{
+    background-color: #333;
+    overflow: hidden;
+    height: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuGeneral__opcion{
+    color: #f2f2f2;
+    padding: 4%;
+    text-decoration: none;
+    font-size: 24px;
+    
+}
+
+.menuGeneral__opcion::hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.menuGeneral__opcion :active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.menuGeneral__titulo{
+    color: white;
+    padding: 4%;
+    font-size: 30px;
+}
+@media only screen and (max-width: 420px){
+    .contenedor {
+    /*background-image: url("src\assets\images\FotoNico.jpeg");*/
+    /*background-color: #5FAD11;*/
+    background-image: url("src\assets\images\Ramen.jfif");
+    background-size: 100%;
+    flex: 1;
+    display: flex;
+    overflow: auto;
+    height: 93%;
+    }
+}
+
+
+.tablaBotones{
+    /*background-color: rgba(3, 119, 42, 0.7);*/
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: min-content;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: auto;
+}
+
+.tablaBotones__boton{
+    flex-grow: 2;
+    padding: 5%;
+    margin: 8%;
+    font-weight: 600;
+    font-size: 20px;
+    /*color: #1B4D2A;*/
+    /*background-color: #5FAD11;*/
+    color: #00731B;
+    /*background-color: #4D7456;*/
+    /*color: rgba(255, 255, 255, 0.6);*/
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tablaBotones__boton--tamanyo{
+    font-size: 50px;
+}
+
