@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "vocesnico": {
+      "hosting": {
+        "appNico2": [
+          "vocesnico"
+        ]
+      }
+    }
+  }
+}

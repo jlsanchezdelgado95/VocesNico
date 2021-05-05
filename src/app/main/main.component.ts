@@ -1,4 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
+import { VocesService } from '../services/voces.service';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor(public voces: VocesService) {
+    console.log(this.voces.recogerAudios().subscribe());
   }
 
+  ngOnInit(): void {
+
+  }
+  importSonido() {
+
+
+  }
 }
