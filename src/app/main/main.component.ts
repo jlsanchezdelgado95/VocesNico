@@ -11,6 +11,7 @@ export class MainComponent implements OnInit {
 
 
   constructor(public voces: VocesService) {
+    console.log(this.voces.leerVoces());
   }
 
   ngOnInit(): void {
