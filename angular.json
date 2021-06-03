@@ -1,5 +1,4 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
     "analytics": "a032a137-70d1-4b81-b685-2576b4d0c92e"
   },
@@ -25,6 +24,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -33,13 +33,7 @@
               "src/styles.css",
               "./node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": [],
-            "vendorChunk": true,
-            "extractLicenses": false,
-            "buildOptimizer": false,
-            "sourceMap": true,
-            "optimization": false,
-            "namedChunks": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -69,8 +63,7 @@
                 }
               ]
             }
-          },
-          "defaultConfiguration": ""
+          }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",

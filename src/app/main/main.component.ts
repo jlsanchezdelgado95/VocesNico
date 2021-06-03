@@ -11,7 +11,6 @@ export class MainComponent implements OnInit {
 
 
   constructor(public voces: VocesService) {
-    console.log(this.voces.recogerAudios().subscribe());
   }
 
   ngOnInit(): void {
