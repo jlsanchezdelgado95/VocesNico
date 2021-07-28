@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { MainComponent } from './main/main.component';
-import { VocesService }  from './services/voces.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -19,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
     
   ],
-  providers: [VocesService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
